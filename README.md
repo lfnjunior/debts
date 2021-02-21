@@ -8,6 +8,7 @@
 
 
 `yarn build` para construir as imagens.
+
 `yarn start` para iniciar os serviços.
 
 Acessar: [localhost:5000](http://localhost:5000/)
