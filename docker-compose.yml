@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  api-server:
+    image: api-server
+    ports:
+      - "3003:3003"
+    networks:
+      - debt-app
+
+  app-client:
+    image: app-client
+    stdin_open: true
+    ports:
+      - "5000:5000"
+    networks:
+      - debt-app
+
+networks:
+  debt-app:
+    driver: bridge

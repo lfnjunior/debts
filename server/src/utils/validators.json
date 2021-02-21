@@ -1,0 +1,81 @@
+{
+   "objects": {
+      "Debt": {
+         "bodyAttributes": [
+            {
+               "name": "id",
+               "required": false,
+               "type": "int64"
+            },
+            {
+               "name": "clientId",
+               "required": true,
+               "type": "int64"
+            },
+            {
+               "name": "reason",
+               "required": true,
+               "type": "string"
+            },
+            {
+               "name": "date",
+               "required": true,
+               "type": "date-time"
+            },
+            {
+               "name": "value",
+               "required": true,
+               "type": "number"
+            }
+         ]
+      },
+      "User": {
+         "bodyAttributes": [
+            {
+               "name": "id",
+               "required": false,
+               "type": "int64"
+            },
+            {
+               "name": "username",
+               "required": true,
+               "type": "string"
+            },
+            {
+               "name": "email",
+               "required": true,
+               "type": "string"
+            },
+            {
+               "name": "password",
+               "required": true,
+               "type": "string"
+            },
+            {
+               "name": "birthdate",
+               "required": false,
+               "type": "date-time"
+            },
+            {
+               "name": "sex",
+               "required": false,
+               "type": "string"
+            }
+         ]
+      },
+      "Login": {
+         "bodyAttributes": [
+            {
+               "name": "email",
+               "required": true,
+               "type": "string"
+            },
+            {
+               "name": "password",
+               "required": true,
+               "type": "string"
+            }
+         ]
+      }
+   }
+}
